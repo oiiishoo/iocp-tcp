@@ -10,7 +10,7 @@
 #include <mutex>
 #include<mswsock.h>
 //abstract server creation, if in search of tcpcomponent.h > look in librare
-
+#include"worker.h"
 int main(){
 
 SOCKET _sock = newServer(port, 0, backlog);
