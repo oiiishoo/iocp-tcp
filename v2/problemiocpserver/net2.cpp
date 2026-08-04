@@ -921,7 +921,7 @@ public:
     size_t getTotalClients() {
         return totalClients.load(std::memory_order_seq_cst);
     }
-    timerstruc* getTstr() {
+    timerstruc* getTstr(){
         return timestr;
     }
     Light() {
@@ -1242,7 +1242,7 @@ int main() {
         tcp.getTstr()->gt.mtx.unlock();
 
         std::cout << "connctx dump end\n";
-        std::cout << sizeof(ConnCtx) << "\n";
+        std::cout << sizeof(ConnCtx)<<"\n";
     }
 
 
